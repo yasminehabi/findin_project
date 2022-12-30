@@ -4,4 +4,4 @@ from findin.models import Custommer
 class CustomerSerializer(serializers.ModelSerializer):
     class Meta:
         model=Custommer
-        feilds='__all__'
+        fields = '__all__' 
