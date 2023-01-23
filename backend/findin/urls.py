@@ -19,5 +19,9 @@ from findin import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('api/customers/',views.customers, name='customers')
+    path('api/customers/',views.customers, name='customers'),
+    path('api/customers/<int:id>',views.customer, name='customer'),
+    path('api/users/',views.users, name='users'),
+    path('api/users/<int:id>',views.user, name='user')
+
 ]
